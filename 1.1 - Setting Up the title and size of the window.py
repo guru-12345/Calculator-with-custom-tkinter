@@ -9,7 +9,7 @@ from customtkinter import *
 root = CTk()  
 
 # Setting the size of the window (Width x Height)
-root.geometry("400x450")  
+root.geometry("400x250")  
 
 # Setting the title of the window
 root.title(' ')  
