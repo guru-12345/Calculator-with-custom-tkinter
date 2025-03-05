@@ -1,4 +1,5 @@
 #Run the code to observe the output.
+#Task 1- uncomment the line 26 and observe output.
 #Task 1- Make the label as wide as the window width.
 #Task 2- Change the text alignment of label to right.
 
@@ -22,7 +23,7 @@ set_appearance_mode("light")
 
 # Create result display
 result = CTkLabel(root, text="0", width=220, bg_color="grey", anchor="w", font=("arial", 60, "bold"))
-result.pack()
+#result.pack()
 
 # Running the main event loop to keep the window open
 root.mainloop()
