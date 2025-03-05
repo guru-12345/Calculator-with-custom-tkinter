@@ -34,7 +34,10 @@ def create_calculator():
             current = result.cget("text")
             # Replace 'X' with '*' for evaluation
             current = current.replace('X', '*')
-            result.configure(text=f"{eval(current):.3f}")
+            eval_result = eval(current)
+            
+            # If result is an integer, show it as an integer; otherwise, show it as a float
+            result.configure(text=str(int(eval_result)) if eval_result == int(eval_result) else f"{eval_result:.3f}")
         except Exception:
             result.configure(text="Error")
 
