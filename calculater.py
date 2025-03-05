@@ -12,11 +12,11 @@ def create_calculator():
         ['7', '8', '9', 'X'],
         ['4', '5', '6', '-'],
         ['1', '2', '3', '+'],
-        ['0', '.', '=']
+        ['0', '.', '=', '/']
     ]
      
     # Button widths (most buttons are square except for backspace and equals) so we can set custom widths for them
-    special_widths = {'Backspace': 160, '=': 160}
+    special_widths = {'Backspace': 160,}
 
     def button_click(value):
         current = result.cget("text")
@@ -84,7 +84,7 @@ def create_calculator():
             # Configure button command
             if button_text in button_actions:
                 button.configure(command=button_actions[button_text])
-            elif button_text.isdigit() or button_text in '+-.*':
+            elif button_text.isdigit() or button_text in '+-.*/':
                 button.configure(command=lambda t=button_text: button_click(t))
                 
             button.pack(side=LEFT)
