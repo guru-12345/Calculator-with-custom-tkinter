@@ -17,7 +17,7 @@ def create_calculator():
         ['0', '.', '=', '/' ]        
     ]
 
- 
+    # This sets a special width of 160 for the "Backspace" button, making it wider than the other buttons
     special_widths = {'Backspace': 160}  
  
     root = CTk() 
