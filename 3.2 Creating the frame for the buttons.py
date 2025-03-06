@@ -18,23 +18,22 @@ def create_calculator():
         ['0', '.', '=', '/' ]        
     ]
 
-    # Define custom button widths (only Backspace button has a different width)
-    special_widths = {'Backspace': 160}  # Custom width for Backspace button (not used in this version)
 
-    # Setup window
-    root = CTk()  # Create the main application window
-    root.geometry("320x450")  # Set window size (320 pixels wide, 450 pixels high)
-    root.resizable(False, False)  # Disable window resizing
-    root.title('Calculator')  # Set the window title
-    set_appearance_mode("Dark")  # Apply dark mode theme
+    special_widths = {'Backspace': 160}  
+    
+    root = CTk()  
+    root.geometry("320x450") 
+    root.resizable(False, False)  
+    root.title('Calculator')  
+    set_appearance_mode("Dark")  
 
-    # Create result display label (to show user input and results)
     result = CTkLabel(root, text="0", width=400, bg_color="grey", 
                      anchor="e", font=("arial", 60, "bold"))  # Right-aligned text
-    result.pack()  # Add result display to the window
-    # Create frames and buttons
-    for row_buttons in button_layout:
-        frame = CTkFrame(root)
+    result.pack()  
+    
+    #The loop creates a frame for each row of buttons in button_layout, grouping buttons together.
+    for row_buttons in button_layout: 
+        frame = CTkFrame(root)  #create a frame for each row
         #frame.pack()
 
     
