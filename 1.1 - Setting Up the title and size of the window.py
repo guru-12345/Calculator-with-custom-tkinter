@@ -1,6 +1,6 @@
 #Run the code to observe the output.
 #Task 1- Change the size of the window to 320x450
-#Task 2- Add the tilte of the window to "Calculator"
+#Task 2- Add the title of the window to "Calculator"
 
 # Importing all necessary modules from customtkinter
 from customtkinter import *  
