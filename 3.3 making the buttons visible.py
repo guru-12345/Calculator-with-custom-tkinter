@@ -51,7 +51,7 @@ def create_calculator():
             font=("arial", 30) if button_text == '.' else None  # Set a custom font size for the '.' button (30px), otherwise use default font
             )
     
-            button.pack(side=LEFT)
+            button.pack(side=LEFT) #This places the button on the left side of its container (the frame) so it appears next to other buttons
     
     return root
     
