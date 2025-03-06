@@ -1,5 +1,5 @@
 #Run the code and observe the output
-#Task 1- Uncomment the line 37 and observe the change in the output.
+#Task 1- Uncomment the line 34 and observe the change in the output.
 
 from customtkinter import *  # Importing CustomTkinter for modern UI styling
 
@@ -16,10 +16,7 @@ def create_calculator():
         ['4', '5', '6', '-'],      
         ['1', '2', '3', '+'],       
         ['0', '.', '=', '/' ]        
-    ]
-
-
-    special_widths = {'Backspace': 160}  
+    ] 
     
     root = CTk()  
     root.geometry("320x450") 
