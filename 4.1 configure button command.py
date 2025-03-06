@@ -2,8 +2,8 @@
 #Line 27 :Define a function to handle button clicks and update the result display
 #Line 28 :Get the current text (value) from the result label
 #Line 29 :If the current text is "0", replace it with the clicked value,otherwise append the clicked value to the current text
-#Line 63 :Set the command for each button to trigger the button_click function when the button is clicked
-#Line 63 :The lambda function ensures that the button's text (button_text) is passed as the 'value' to the button_click function
+#Line 60 :Set the command for each button to trigger the button_click function when the button is clicked
+#Line 60 :The lambda function ensures that the button's text (button_text) is passed as the 'value' to the button_click function
 
 
 from customtkinter import *  
@@ -23,10 +23,7 @@ def create_calculator():
     ]
 
     special_widths = {'Backspace': 160}  
-
-
-    
-    
+   
     def button_click(value):
         current = result.cget("text")
         result.configure(text=value if current == "0" else current + value)
