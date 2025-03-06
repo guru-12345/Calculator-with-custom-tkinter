@@ -1,6 +1,6 @@
 #Run the code and observe the output by clicking Backspace
 #Create a function named clear that resets the result label text to 0 in line 28.
-#Add the clear function to the button dictionary and link it to the "C" button
+#Add the clear function to the button dictionary and link it to the "C" button in line 41
 
 
 from customtkinter import *  
