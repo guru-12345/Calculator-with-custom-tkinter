@@ -22,10 +22,7 @@ def create_calculator():
         [ ],       
         [ ]        
     ]
-
-    # Define custom button widths (only Backspace button has a different width)
-    special_widths = {'Backspace': 160}  # Custom width for Backspace button (not used in this version)
-
+    
     # Setup window
     root = CTk()  # Create the main application window
     root.geometry("320x450")  # Set window size (320 pixels wide, 450 pixels high)
