@@ -37,7 +37,9 @@ def create_calculator():
     result = CTkLabel(root, text="0", width=400, bg_color="grey", 
                      anchor="e", font=("arial", 60, "bold"))  # Right-aligned text
     result.pack()  # Add result display to the window
+    return root
 
     
 # Create and display the calculator window
 calculator = create_calculator()
+calculator.mainloop()
