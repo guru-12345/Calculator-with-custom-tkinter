@@ -1,6 +1,6 @@
 #Run the code and observe the output by clicking Backspace
 #Create a function named clear that resets the result label text to 0 in line 28.
-#Add the clear function to the button dictionary and link it to the "C" button in line 41
+#Add the clear function to the button dictionary and link it to the "C" button in line 46
 
 
 from customtkinter import *  
@@ -24,8 +24,13 @@ def create_calculator():
     def button_click(value):
         current = result.cget("text") # 
         result.configure(text=value if current == "0" else current + value)
+        
+    #define clear function here
+    
 
 
+
+    
 
     # Define a function called backspace that removes the last character from the current display
     def backspace():
