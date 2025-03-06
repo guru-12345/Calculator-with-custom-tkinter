@@ -1,7 +1,9 @@
 #Run the code to observe the output.
-#Task 1- uncomment the line 26 and observe output.
-#Task 1- Make the label as wide as the window width.
-#Task 2- Change the text alignment of label to right.
+#Task 1- uncomment the line 28 and observe output.
+#Task 2- Make the label as wide as the window width.
+#Task 3- Change the text alignment of label to right.
+#Line 27 - # Creates a label to display the result with "0" as the starting text, grey background, 
+#large bold font, and anchor set to "w" (left-aligned)
 
 # Importing all necessary modules from customtkinter
 from customtkinter import *  
