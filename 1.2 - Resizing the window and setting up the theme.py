@@ -1,6 +1,6 @@
 #Run the code to observe the output.
 #Task 1- Change the background color to "Dark"
-#Task 2- Remove the comment in the line 17 to make window size fixed.
+#Task 2- Remove the comment in the line 15 to make window size fixed.
 
 # Importing all necessary modules from customtkinter
 from customtkinter import *  
