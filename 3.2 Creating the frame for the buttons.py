@@ -5,7 +5,7 @@
 
 from customtkinter import *  
 
-# Constants for appearance
+# Variable for appearance
 BUTTON_COLOR = "#21201F"  
 HOVER_COLOR = "#4D4A48"   
 BUTTON_SIZE = 80          
