@@ -1,4 +1,4 @@
-#Run the code and observe the output
+#Run the code and observe the output.
 #Task 1- Find the reason why button are not visible. 
 #Task 2- Add the items into list as given below   
 #Line22    ['1', '2', '3', '+'],       
