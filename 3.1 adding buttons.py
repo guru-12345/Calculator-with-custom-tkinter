@@ -6,8 +6,7 @@
 
 #You will be able to see only label on the window.
 
-from customtkinter import *  # Importing CustomTkinter for modern UI styling
-
+from customtkinter import *  
 def create_calculator():
     # Constants for appearance
     BUTTON_COLOR = "#21201F"  # Button background color
