@@ -1,5 +1,5 @@
 #Run the code and observe the output
-#Task 1- Uncomment the line 34 and observe the change in the output.
+#Task 1- Uncomment the line 35 and observe the change in the output.
 
 """The for loop helps arrange buttons in rows so they look organized in the calculator"""
 
