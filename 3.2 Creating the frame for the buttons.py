@@ -1,6 +1,6 @@
 #Run the code and observe the output
 #Task 1- Uncomment the line 35 and observe the change in the output.
-# 'button_layout' is a list of button rows, and 'row_buttons' is each row in that list.
+#Line 33: 'button_layout' is a list of button rows, and 'row_buttons' is each row in that list.
 """The for loop helps arrange buttons in rows so they look organized in the calculator"""
 
 from customtkinter import *  
