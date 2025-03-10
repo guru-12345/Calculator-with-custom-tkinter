@@ -2,7 +2,7 @@
 #Create a function named clear that resets the result label text to "0" in line 31.
 #Add the clear function to the button dictionary and link it to the "C" button in line 43
 
-#Line 72: If the button is Backspace, it works in a special way and removes a character.
+#Line 72: If the button belongs to the button_actions dictionary,it works in a special way..
 #Line 74: If the button is a number or symbol (+, -, *, /, .), it gets added 
 #to the screen when clicked.
 
