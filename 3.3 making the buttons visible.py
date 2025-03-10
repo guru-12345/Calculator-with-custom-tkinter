@@ -1,6 +1,6 @@
 # Run the code and observe the output
 # Task 1 - Change the side of the button from LEFT to RIGHT in line 55, run, and observe the difference 
-
+# Line 20: We give a special width to the 'Backspace' button so it fits properly in the row with only three buttons
 from customtkinter import *  
 
 BUTTON_COLOR = "#21201F"  
