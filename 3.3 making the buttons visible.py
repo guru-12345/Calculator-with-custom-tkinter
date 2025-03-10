@@ -50,7 +50,7 @@ for row_buttons in button_layout:
             border_width=1,  # Set border width for better appearance
             hover_color=HOVER_COLOR,  # Change color when hovered over
             fg_color=BUTTON_COLOR,  # Set button background color
-            font=("arial", 30) if button_text == '.' else None  # Make '.' button text larger for visibility
+            font=("arial", 30) #if button_text == '.' else None  # Make '.' button text larger for visibility
         )
         button.pack(side=LEFT)  # Place the button inside the frame (aligned to the left)
 
