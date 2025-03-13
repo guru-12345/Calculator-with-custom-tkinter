@@ -1,26 +1,8 @@
-# Run the code and observe the output.
-# Task 1 - Find the reason why buttons are not visible. 
-# Task 2 - Add the items into the list as given below   
-# Line 22    ['1', '2', '3', '+'],       
-# Line 23    ['0', '.', '=', '/'] 
+#Run the code and observe the output
+#Task 1: Align all the buttons horizontally using side="LEFT" in button.pack().
+#Task 2: Create a new button called button3 and set its text to "3".
 
-# You will be able to see only the label on the window.
-
-from customtkinter import *  
-
-# Constants for appearance
-BUTTON_COLOR = "#21201F"  # Button background color
-HOVER_COLOR = "#4D4A48"   # Button hover color
-BUTTON_SIZE = 80          # Default button size
-
-# Button configurations (layout of the calculator)
-button_layout = [
-    ['+/-', 'C', 'Backspace'],  
-    ['7', '8', '9', 'X'],       
-    ['4', '5', '6', '-'],      
-    [ ],       
-    [ ]        
-]
+from customtkinter import * 
 
 # Setup window
 root = CTk()  # Create the main application window
@@ -34,5 +16,37 @@ result = CTkLabel(root, text="0", width=400, bg_color="grey",
                  anchor="e", font=("arial", 60, "bold"))  # Right-aligned text
 result.pack()  # Add result display to the window
 
-# Run the application
+# Button variables for styling
+button_color = "black"
+hover_color = "orange"
+button_size = 80
+button_width = 100  # Set fixed width for the buttons
+
+# Create buttons and pack them horizontally
+button1 = CTkButton(root,
+                text="1",
+                width=button_width,  # Fixed width
+                height=button_size,
+                border_width=1,
+                hover_color=hover_color,
+                fg_color=button_color,
+                font=("arial", 20) 
+            )
+button1.pack()  # Add the side inside the paranthesis
+
+button2 = CTkButton(root,
+                text="2",
+                width=button_width,  # Fixed width
+                height=button_size,
+                border_width=1,
+                hover_color=hover_color,
+                fg_color=button_color,
+                font=("arial", 20) 
+            )
+button2.pack()  # Add padding between buttons
+
+# Add the code for button3 here
+
+
+
 root.mainloop()
