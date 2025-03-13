@@ -43,7 +43,7 @@ button2 = CTkButton(root,
                 fg_color=button_color,
                 font=("arial", 20) 
             )
-button2.pack()  # Add padding between buttons
+button2.pack()  # Add the side inside the paranthesis
 
 # Add the code for button3 here
 
