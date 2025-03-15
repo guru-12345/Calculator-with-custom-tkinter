@@ -1,5 +1,5 @@
 #Run the code and observe output
-#Task 1- Print the 'Dessert' from the nested list.
+#Task 1- Print the second element(Dessert) from the Second list.
 
 # This is a nested list
 favorite_foods = [
@@ -8,5 +8,7 @@ favorite_foods = [
     ['Apple', 'Fruit', 3]
 ]
 
-# Printing the whole list
-print(favorite_foods)
+# Printing the third element from the first list.
+print(favorite_foods[0][2])
+
+# Print here the second element from the Second list.
