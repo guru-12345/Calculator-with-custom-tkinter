@@ -1,5 +1,5 @@
 #Run the code and observe the output
-#Task 1: Align all the buttons horizontally using side="LEFT" in button.pack().
+#Task 1: Align all the buttons horizontally using side=LEFT in button.pack().
 #Task 2: Create a new button called button3 and set its text to "3".
 
 from customtkinter import * 
