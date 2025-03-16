@@ -1,6 +1,6 @@
 #Run the code, test all the operators, and identify which one is not working.
 #Task 1- Add the below code in line 72 to enable the multiplication operator.
-''' 'X': lambda: button_click('*') '''
+# 'X': lambda: button_click('*') 
 
 from customtkinter import *  
 
