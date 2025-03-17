@@ -1,14 +1,18 @@
 # Run the code and observe the output by clicking on each button
-# Line 39 : We are defining a function to handle button clicks and update the result display
-# Line 40 : It gets the current text (value) from the result label
 
-#Task 1:- Uncomment line 60,run the code, press the keys, and observe the output
+#Add Task 1 on line 43, Task 2 on line 44, and Task 3 on line 45. 
+#Task 1- Create a function called 'button_click' with a value parameter.
 
-# Line 60 : It set the command for each button to trigger the button_click 
-#function when the button is clicked
+#Task 2- Get the current text using, 'current = result.cget("text")'.
+#(This retrieves the text displayed on the calculator.)
 
-# Line 60 : The lambda function ensures that the button's text (button_text) is passed 
-#as the 'value' to the button_click function
+#Task 3- Change the text using, 'result.configure(text=value)'.
+#(This updates the display with the new value.)
+
+#Task 4:- Add the code, "button.configure(command=lambda t=button_text: button_click(t))' 
+#at line 64 inside the loop to enable button functionality.
+#(It ensures each button updates the display with its text when clicked.)
+
 
 from customtkinter import *  
 
@@ -36,9 +40,9 @@ button_layout = [
 
 special_widths = {'Backspace': 160}  
 
-def button_click(value):
-    current = result.cget("text")
-    result.configure(text=value)
+
+    
+    
 
 
 for row_buttons in button_layout:
@@ -57,7 +61,7 @@ for row_buttons in button_layout:
             fg_color=button_color,
             font=("arial", 20)
         )
-        button.configure(command=lambda t=button_text: button_click(t))
+        
         button.pack(side=LEFT)
 
 root.mainloop()
