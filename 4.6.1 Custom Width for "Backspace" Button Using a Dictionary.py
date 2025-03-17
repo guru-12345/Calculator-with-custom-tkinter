@@ -1,5 +1,15 @@
 #Run and Observe the output.
-#Task1- Uncomment line 42 and observe the output again
+ 
+'''
+#Task 1-Create a dictionary named special_widths at line 40 to store specific button widths.
+1-> The dictionary name is special_widths.
+2-> The key in the dictionary is "Backspace" (which represents the button text).
+3-> The value is 160, which sets the width of the "Backspace" button to 160 pixels.
+'''
+#Task 2- In line 47, add width = special_widths.get(button_text, button_size) to set a 
+#custom width for the "Backspace" button while keeping others the same.
+
+#Task 3- Add width=width in line 56 to apply custom button widths, ensuring the "Backspace" button appears wider.
 
 from customtkinter import *
 
@@ -27,7 +37,6 @@ button_layout = [
     ['0', '.', '=', '/']
 ]
 
-special_widths = {'Backspace': 160} #Set custom width for specific buttons (e.g., 'Backspace' = 160px)
 
 
 for row_buttons in button_layout:
@@ -35,16 +44,16 @@ for row_buttons in button_layout:
     frame.pack()
     
     for button_text in row_buttons:
-        width = special_widths.get(button_text,button_size ) # Use custom width if set, else default size  
+         
         button = CTkButton(
             frame,   
             text=button_text,
-            #width=width,
             height=button_size,
             border_width=1,
             hover_color=hover_color,
             fg_color=button_color,
-            font=("arial", 30)
+            font=("arial", 30),
+            
         )
         button.pack(side="left")  
 
