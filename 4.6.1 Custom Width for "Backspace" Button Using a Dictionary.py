@@ -39,7 +39,7 @@ for row_buttons in button_layout:
         button = CTkButton(
             frame,   
             text=button_text,
-            width=width,
+            #width=width,
             height=button_size,
             border_width=1,
             hover_color=hover_color,
