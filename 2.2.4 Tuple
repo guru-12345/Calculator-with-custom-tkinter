@@ -1,5 +1,0 @@
-#Run the code observe the output.
-#Task 1- Create a tuple with the names of 4 colors and print them
-
-fruits = ("apple", "banana", "cherry")  
-print(fruits)
