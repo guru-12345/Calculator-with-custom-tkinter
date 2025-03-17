@@ -1,4 +1,4 @@
-#Run and observe the codec
+#Run and observe the code
 #Task 1:Modify the code to add a space after each button when printing, so the output looks clean.
 
 '''
