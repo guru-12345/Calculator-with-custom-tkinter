@@ -7,7 +7,7 @@
 3-> The value is 160, which sets the width of the "Backspace" button to 160 pixels.
 '''
 #Task 2- In line 47, add width = special_widths.get(button_text, button_size) to set a 
-#custom width for the "Backspace" button while keeping others the same.
+#custom width for the "Backspace" button while keeping others buttons as the same.
 
 #Task 3- Add width=width in line 56 to apply custom button widths, ensuring the "Backspace" button appears wider.
 
