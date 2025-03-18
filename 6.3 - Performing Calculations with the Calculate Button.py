@@ -3,7 +3,7 @@
 # 'X': lambda: button_click('*') 
 '''
 Task 2- Add print("An error occurred")in line 71 inside the except block before setting the display to "Error".
-(Check the error message in the **VS Code terminal** while the calculator shows 'Invalid Input'.)
+(Check the error message in the VS Code terminal while the calculator shows 'Invalid Input'.)
 
 Task 3- Try entering `5+/2` or `10/0` in the calculator and see how the `try-except` block handles the error.
 
