@@ -1,5 +1,5 @@
 #Run the code, test all the operators, and identify which one is not working.
-#Task 1- Add the below code in line 72 to enable the multiplication operator.
+#Task 1- Add the below code in line 80 to enable the multiplication operator.
 # 'X': lambda: button_click('*') 
 '''
 Task 2- Add print("An error occurred")in line 71 inside the except block before setting the display to "Error".
@@ -77,7 +77,8 @@ button_actions = {
     'Backspace': backspace,
     'C': clear,
     '=' :calculate,
-    
+
+  
 }
 
 for row_buttons in button_layout:
