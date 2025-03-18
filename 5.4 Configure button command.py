@@ -1,8 +1,10 @@
 # Run the code and observe the output by clicking on each button
-#Task 1:- Update the if-else code from lines 32 to 37 to 
-
-'''result.configure(text=value if current == "0" else current + value)'''
-
+#Task 1:- Update the button_click function to Replace "0" with the First Clicked Number & Append Others.
+'''Hint:- 
+    if current == "0":
+        result.configure(text=value)
+    else:
+        result.configure(text=current + value)'''
 from customtkinter import *  
 
 root = CTk()  
@@ -30,11 +32,10 @@ button_layout = [
 special_widths = {'Backspace': 160}  
 
 def button_click(value):
-    current = result.cget("text")
-    if current == "0":  # If the current text is "0", replace it with the new value
-        result.configure(text=value)  # Update the label with the new value
-    else:  
-        result.configure(text=current + value)  # Append the new value to the existing text
+    current = result.cget("text")  # Get current text from display
+    
+    result.configure(text=current + value)  # Directly appends new number
+
  
 
 for row_buttons in button_layout:
