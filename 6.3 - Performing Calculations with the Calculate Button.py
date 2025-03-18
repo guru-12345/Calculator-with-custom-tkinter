@@ -1,6 +1,13 @@
 #Run the code, test all the operators, and identify which one is not working.
 #Task 1- Add the below code in line 72 to enable the multiplication operator.
 # 'X': lambda: button_click('*') 
+'''
+Task 2- Add print("An error occurred")in line 71 inside the except block before setting the display to "Error".
+(Check the error message in the **VS Code terminal** while the calculator shows 'Invalid Input'.)
+
+Task 3- Try entering `5+/2` or `10/0` in the calculator and see how the `try-except` block handles the error.
+
+Task 4- Change "Error" to "Invalid Input" inside the except block.'''
 
 from customtkinter import *  
 
@@ -61,6 +68,7 @@ def calculate():
 
         result.configure(text=result_text)  # Update the display with the formatted result
     except Exception:  # Handle any errors, such as invalid input
+        
         result.configure(text="Error")  # Show "Error" on the calculator display if evaluation fails
 
 
