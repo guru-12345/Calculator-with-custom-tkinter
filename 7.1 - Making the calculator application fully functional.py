@@ -1,6 +1,8 @@
 #Run the code, test all the operators, and identify which one is not working.
-#Task 1- Add the below code in line 84 to enable the +/- operator.
+#Task 1- Add the below code in line 86 to enable the +/- operator.
 # '+/-' : button_opposite 
+#Task 2- In line 72 modify the code current[0] with current.startswith, now run and observe the output.
+#Task 3- In line 73 modify the code  current[1:] with current[2:], now run and observe the output.
 
 from customtkinter import *  
 
@@ -66,12 +68,14 @@ def calculate():
 
 def button_opposite():
         current = result.cget("text")
+        
         if current[0] == "-":  # Check if the number is already negative
             result_text = current[1:]  # Remove the negative sign to make it positive
         else:
             result_text = "-" + current  # Add a negative sign to make it negative
 
         result.configure(text=result_text)  # Update the display with the new value
+        
 
 
 
@@ -81,7 +85,7 @@ button_actions = {
     'C': clear,
     '=' :calculate,
     'X' : lambda: button_click('*'),
-    
+    '+/-' : button_opposite
 }
 
 for row_buttons in button_layout:
