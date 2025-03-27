@@ -12,32 +12,12 @@ try:
 except:
     print("Something went wrong!")  # This message will be shown instead of an error
 
-# Task 1: Modify the code to handle an error caused by accessing an invalid list index.
-
-
-# Example 2: Try and except without specifying an error type
-# This will catch any error that happens in the try block.
+# Task 1:Uncomment & Modify the code to handle an error caused by accessing an invalid list index.
+"""
 try:
-    print(undefined_variable)  # This variable is not defined, causing an error
+    my_list = [1, 2, 3]
+    print(my_list[5])  
 except:
-    print("An error occurred!")
+   
+"""
 
-# Task 2: Modify the code to handle an error when trying to open a file that does not exist.
-
-
-# Example 3: Using finally
-# The 'finally' block runs no matter what, even if an error occurs.
-try:
-    print("Trying something...")
-    num = 5 / 1  # No error here
-except:
-    print("Something went wrong!")
-finally:
-    print("This will always run!")
-
-# Task 3: Modify the code to raise an error inside the try block and see how finally still runs.
-
-# Summary:
-# - 'try' lets us test a block of code for errors.
-# - 'except' catches and handles the error.
-# - 'finally' runs no matter what, useful for cleanup tasks.
