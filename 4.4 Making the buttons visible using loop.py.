@@ -1,5 +1,7 @@
 #Run and Observe the output.
 #Task 1: Make the window resizable so you can expand it and see all the buttons.
+#Task 2:Increase the border width to 3 and see the difference 
+
 from customtkinter import *
 
 root = CTk()
@@ -30,13 +32,13 @@ button_layout = [
 for row_buttons in button_layout:
     for button_text in row_buttons:
         button = CTkButton(
-            root,
-            text=button_text,
-            height=button_size,
-            border_width=1,
-            hover_color=hover_color,
-            fg_color=button_color,
-            font=("arial", 30)
+            root,                     # The main window where the button will be placed
+            text=button_text,         # The text displayed on the button
+            height=button_size,       # Sets the height of the button
+            border_width=1,           # Defines the border width of the button
+            hover_color=hover_color,  # Changes color when the mouse hovers over it
+            fg_color=button_color,    # Sets the default background color of the button
+            font=("arial", 30)        # Defines the font style and size for the button text
         )
         button.pack(side="left")  # Arrange buttons in a single row
 
