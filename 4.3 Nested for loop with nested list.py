@@ -1,5 +1,5 @@
 #Run and observe the code
-#Task 1:Modify the code to add a space after each button when printing, so the output looks clean.
+#Task 1:Print the items from the list using nested 'for loop'.
 
 '''
 +/-  C  Backspace  
@@ -20,7 +20,4 @@ button_layout = [
         ['0', '.', '=', '/' ]
     ]
     
-for row_buttons in button_layout:
-    for button_text in row_buttons:
-        print(button_text)
-    print()
+
