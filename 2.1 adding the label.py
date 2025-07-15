@@ -12,7 +12,8 @@ root.resizable(False, False)
 root.title('Calculator')  
 set_appearance_mode("light")  
 
-'''The below code creates a result label to display the result with "0" as the starting text, grey as background colour, 
+'''The below code creates a result label to display 
+the result with "0" as the starting text, grey as background colour, 
 bold font, and anchor set to "w" (left-aligned) '''
 
 result = CTkLabel(root, text="0", width=220, bg_color="grey", anchor="w", font=("arial", 60, "bold"))
