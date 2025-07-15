@@ -1,8 +1,8 @@
 #Run and Observe the output.
 #Task 1: Uncomment the line 35 to and observe the output/error.
 #Task 2: Add frame.pack() on line 36 to fix the error.
-#Task 3: Replace 'root' with 'frame' inside the loop to place buttons inside the frame instead of the main window.
-
+#Task 3: Replace 'root' with 'frame' inside the loop 
+#to place buttons inside the frame instead of the main window.
 
 from customtkinter import *
 
@@ -32,8 +32,8 @@ button_layout = [
 
 # Create buttons in a single row
 for row_buttons in button_layout:
-    #frame = CTkFrame(root)  #It creates a frame inside the main window (root) to group widgets together.
-                            
+    #frame = CTkFrame(root) It creates a frame in the main window to group widgets.   
+                      
     
     for button_text in row_buttons:
         button = CTkButton(
